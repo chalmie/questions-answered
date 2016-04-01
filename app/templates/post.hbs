@@ -1,4 +1,16 @@
-<h1> {{model.author}} wants to know:</h1>
-<h4> {{model.question}} </h4>
-
-{{post-update post=model updatePost="updatePost"}}
+<div class="question">
+  <h1> {{model.author}} wants to know:</h1>
+  <h4> {{model.question}} </h4>
+  <p> Extra info: {{model.detail}} </p>
+  {{post-update post=model updatePost="updatePost"}}
+</div>
+<br>
+<div class="answer">
+  {{answer-new saveAnswer="saveAnswer" post=model}}
+  <br>
+  <ul>
+  {{#each model.answers as |answer|}}
+     {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+</div>

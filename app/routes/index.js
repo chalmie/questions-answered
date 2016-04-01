@@ -3,8 +3,7 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   model() {
     return Ember.RSVP.hash({
-      posts: this.store.findAll('post'),
-      answers: this.store.findAll('answer')
+      posts: this.store.findAll('post')
     });
   },
   actions: {
