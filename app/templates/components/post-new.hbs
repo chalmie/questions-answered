@@ -1,27 +1,23 @@
 {{#if addNewPost}}
-    <h1>New Post</h1>
-    <div>
-     <form>
-       <fieldset class="form-group">
-         <label for="author">Author</label>
-         {{input value=author id="author"}}
-       </fieldset>
+   <form>
+     <h1>Your Question</h1>
+     <br>
+     <div class="form-group">
+       <label for="author">Author</label>
+       {{input value=author id="author"}}
+     </div>
 
-       <fieldset class="form-group">
-         <label for="question">Question</label>
-         {{input value=question id="question"}}
-       </fieldset>
+     <div class="form-group">
+       <label for="question">Question</label>
+       {{input value=question id="question"}}
+     </div>
 
-       <fieldset class="form-group">
-         <label for="detail">Details</label>
-         <textarea class="form-control" rows="3">
-           {{input value=detail id="detail"}}
-         </textarea>
-       </fieldset>
+     <div class="form-group">
+       <label for="detail">Details</label>
+       {{input value=detail id="detail"}}
+     </div>
+   </form>
 
-       <button {{action 'savePost'}}>Save</button>
-     </form>
-    </div>
  {{else}}
-    <button class="btn btn-lg btn-info new-post"{{action 'postFormShow'}}>Ask Away!</button>
+    <button class="btn btn-lg btn-info"{{action 'postFormShow'}}>Ask Away!</button>
 {{/if}}
