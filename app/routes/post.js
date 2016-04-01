@@ -14,6 +14,15 @@ export default Ember.Route.extend({
       });
       this.transitionTo('post', params.post);
     },
+    deletePost(post) {
+      var answer_deletions = post.get('answers').map(function(answer) {
+        return answer.destroyRecord();
+      });
+      Ember.RSVP.all(answer_deletions).then(function() {
+        return post.destroyRecord();
+      });
+      this.transitionTo('index');
+  },
     updatePost(post, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {

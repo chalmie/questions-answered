@@ -5,15 +5,15 @@ export default Ember.Component.extend({
     actions: {
       postFormShow() {
         this.set('addNewPost', true);
-    },
-        savePost() {
-            var params = {
-            author: this.get('author') ? this.get('author') : "",
-            question: this.get('question') ? this.get('question') : "",
-            detail: this.get('detail') ? this.get('detail') : "",
-            };
-            this.set('addNewPost', false);
-            this.sendAction('savePost', params);
-        }
+      },
+      savePost() {
+          var params = {
+          author: this.get('author') ? this.get('author') : "",
+          question: this.get('question') ? this.get('question') : "",
+          detail: this.get('detail') ? this.get('detail') : "",
+          };
+          this.set('addNewPost', false);
+          this.sendAction('savePost', params);
+      }
     }
 });

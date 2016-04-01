@@ -12,6 +12,8 @@ export default Ember.Component.extend({
             solution: this.get('solution') ? this.get('solution') : "",
             post: this.get('post') ? this.get('post') : ""
             };
+            this.set('author', "");
+            this.set('solution', "");
             this.set('addNewAnswer', false);
             this.sendAction('saveAnswer', params);
         }
