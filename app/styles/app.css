@@ -32,4 +32,21 @@ body {
 
 .btn {
   text-align: center;
+	background-color: black;
+	text: white;
+	border-color: white;
+}
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open>.dropdown-toggle.btn-info {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.save-post {
+	border-style: solid;
+	line-height: 30px;
+	width: 50%;
+	border-radius: 50%;
+	padding: 20px;
+	margin: 0 auto;
 }
