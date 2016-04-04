@@ -1,7 +1,6 @@
 # Questions-answered
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Users can submit questions and answer the questions of other users.
 
 ## Prerequisites
 
@@ -22,12 +21,12 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
+* Create a new app at firebase.com
+* Edit the following line in config/environment.js to match the name of the app you've created at firebase.com: 
+  * firebase: 'https://APP-NAME.firebaseio.com/'
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
 
 ### Running Tests
 
@@ -39,15 +38,20 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+## Support and contact details
 
-Specify what it takes to deploy your app.
+_If you have any questions, concerns, or feedback, please contact the authors through_ [gitHub](https://github.com/chalmie/).
 
-## Further Reading / Useful Links
+## Technologies Used
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+* _This app was created with the [Ember](http://emberjs.com/) framework._
+* _This project was built on [Node.js](https://nodejs.org/en/)._
+* _The database for this app was handled by [FireBase](https://www.firebase.com/)._
+* _Dependencies were handled with [npm](https://www.npmjs.com/) and [Bower](http://bower.io/)._
+
+### License
+
+MIT License.
+
+Copyright (c) 2016 **_Blair Peterson_**
 
